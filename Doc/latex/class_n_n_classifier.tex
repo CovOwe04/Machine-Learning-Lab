@@ -1,0 +1,721 @@
+\hypertarget{class_n_n_classifier}{}\doxysection{NNClassifier Class Reference}
+\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+A \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} class (derived class) that inherited from the \mbox{\hyperlink{class_phone_orientation}{Phone\+Orientation}} class (Base Class) that has a public access specififers.  
+
+
+
+
+{\ttfamily \#include \char`\"{}NNClassifier.\+h\char`\"{}}
+
+Inheritance diagram for NNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}{NNClassifier}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}{setX}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the x attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}{setY}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the y attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}{setZ}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the z attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}{set\+Label}} (int)
+\begin{DoxyCompactList}\small\item\em Setter function for the label attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}{set\+Head}} (\mbox{\hyperlink{struct_node}{NODE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Setter function for the head attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the x attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the y attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}{getZ}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the z attribute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{get\+Label}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the label attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{NODE}} $\ast$ \mbox{\hyperlink{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the head attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}{$\sim$\+NNClassifier}} ()
+\begin{DoxyCompactList}\small\item\em A Destructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} Class used to ensure that we free the head member variable. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearest\+Neighbour}} (\mbox{\hyperlink{struct_node}{NODE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em A function that calculates the distance between 2 nodes (3d points) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{decide\+Orientation\+Name}} (int)
+\begin{DoxyCompactList}\small\item\em A function that decides the name of a given integer label. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}{learn\+Orientation}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A function that learns data from a given text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{predict\+Orientation}} (float, float, float)
+\begin{DoxyCompactList}\small\item\em A function that predicts the orientation label of data from user input values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}{predict\+Orientation}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A function that predicts the orientation label of data from a given text file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}{learn\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for learn\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}{predict\+Orientation}} (float, float, float)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}{predict\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}{x}}
+\begin{DoxyCompactList}\small\item\em A member variable that is the x gravity vector for a phone orientation (temporary float value) that will be compared to learned data. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}{y}}
+\begin{DoxyCompactList}\small\item\em A member variable that is the y gravity vector for a phone orientation (temporary float value) that will be compared to learned data. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}{z}}
+\begin{DoxyCompactList}\small\item\em A member variable that is the z gravity vector for a phone orientation (temporary float value) that will be compared to learned data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}}
+\begin{DoxyCompactList}\small\item\em A member variable that is the label of a phone orientation (temporary int value) that will be compared to learned data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{NODE}} $\ast$ \mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}
+\begin{DoxyCompactList}\small\item\em A member variable that is a pointer to the head of a linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}{set\+Attributes}} (std\+::ifstream \&, \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&)
+\begin{DoxyCompactList}\small\item\em A friend function that sets current obejct attributes to data read from a file. \end{DoxyCompactList}\item 
+std\+::ofstream \& \mbox{\hyperlink{class_n_n_classifier_a0523fd5e1938afd7cc4991124c5bae56}{operator$<$$<$}} (std\+::ofstream \&, \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&)
+\begin{DoxyCompactList}\small\item\em A friend function that sets current obejct attributes to data read from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} class (derived class) that inherited from the \mbox{\hyperlink{class_phone_orientation}{Phone\+Orientation}} class (Base Class) that has a public access specififers. 
+
+This class overrides the abstract class functions to use for its own class \begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00020}{20}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}\label{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}} 
+\index{NNClassifier@{NNClassifier}!NNClassifier@{NNClassifier}}
+\index{NNClassifier@{NNClassifier}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{NNClassifier()}{NNClassifier()}}
+{\footnotesize\ttfamily NNClassifier\+::\+NNClassifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}. 
+
+Initializes an empty object of \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} type 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file, as well as a node pointer which stores th head of the linked list of learned data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return type 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}\label{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}} 
+\index{NNClassifier@{NNClassifier}!````~NNClassifier@{$\sim$NNClassifier}}
+\index{````~NNClassifier@{$\sim$NNClassifier}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{$\sim$NNClassifier()}{~NNClassifier()}}
+{\footnotesize\ttfamily NNClassifier\+::$\sim$\+NNClassifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A Destructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} Class used to ensure that we free the head member variable. 
+
+the member variable was dynamically allocated to a space in heap using the new operator. We must free it before we are out of scope. It helps us avoid unneccessary memory leaks and return the resource back to the memory. \begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25/3/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}\label{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}} 
+\index{NNClassifier@{NNClassifier}!decideOrientationName@{decideOrientationName}}
+\index{decideOrientationName@{decideOrientationName}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{decideOrientationName()}{decideOrientationName()}}
+{\footnotesize\ttfamily std\+::string NNClassifier\+::decide\+Orientation\+Name (\begin{DoxyParamCaption}\item[{int}]{nearest\+Label }\end{DoxyParamCaption})}
+
+
+
+A function that decides the name of a given integer label. 
+
+This function uses a switch case to determine which name label to associate with the integer label 
+\begin{DoxyParams}{Parameters}
+{\em takes} & an int which is the nearest\+Label integer that was determined by the nearest\+Neighbour classifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a string which is the name label of the integer label 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}\label{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}} 
+\index{NNClassifier@{NNClassifier}!getHead@{getHead}}
+\index{getHead@{getHead}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{NODE}} $\ast$ NNClassifier\+::get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for the head attribute. 
+
+Gets the head attribute of the current object in use which is a \mbox{\hyperlink{struct_node}{Node}} pointer address 
+\begin{DoxyParams}{Parameters}
+{\em void} & (nothing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a \mbox{\hyperlink{struct_node}{Node}} pointer which is the current object\textquotesingle{}s head attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}\label{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}} 
+\index{NNClassifier@{NNClassifier}!getLabel@{getLabel}}
+\index{getLabel@{getLabel}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getLabel()}{getLabel()}}
+{\footnotesize\ttfamily int NNClassifier\+::get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for the label attribute. 
+
+Gets the label attribute of the current object in use which is an int value 
+\begin{DoxyParams}{Parameters}
+{\em void} & (nothing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an int which is the current object\textquotesingle{}s label attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}\label{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}} 
+\index{NNClassifier@{NNClassifier}!getX@{getX}}
+\index{getX@{getX}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float NNClassifier\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for the x attribute. 
+
+Gets the x attribute of the current object in use which is a float value 
+\begin{DoxyParams}{Parameters}
+{\em void} & (nothing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a float which is the current object\textquotesingle{}s x attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}\label{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}} 
+\index{NNClassifier@{NNClassifier}!getY@{getY}}
+\index{getY@{getY}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float NNClassifier\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for the y attribute. 
+
+Gets the y attribute of the current object in use which is a float value 
+\begin{DoxyParams}{Parameters}
+{\em void} & (nothing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a float which is the current object\textquotesingle{}s y attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}\label{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}} 
+\index{NNClassifier@{NNClassifier}!getZ@{getZ}}
+\index{getZ@{getZ}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{getZ()}{getZ()}}
+{\footnotesize\ttfamily float NNClassifier\+::getZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter function for the z attribute. 
+
+Gets the z attribute of the current object in use which is a float value 
+\begin{DoxyParams}{Parameters}
+{\em void} & (nothing) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a float which is the current object\textquotesingle{}s z attribute 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}\label{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}} 
+\index{NNClassifier@{NNClassifier}!learnOrientation@{learnOrientation}}
+\index{learnOrientation@{learnOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{learnOrientation()}{learnOrientation()}}
+{\footnotesize\ttfamily void NNClassifier\+::learn\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A function that learns data from a given text file. 
+
+This function learns information in the form of phone gravity vectors and labels and stores in into a linked list 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}{Phone\+Orientation}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00133}{133}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}\label{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}} 
+\index{NNClassifier@{NNClassifier}!nearestNeighbour@{nearestNeighbour}}
+\index{nearestNeighbour@{nearestNeighbour}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbour()}{nearestNeighbour()}}
+{\footnotesize\ttfamily float NNClassifier\+::nearest\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{NODE}} $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+A function that calculates the distance between 2 nodes (3d points) 
+
+This function uses an equation to find the distance between 2 given nodes (3d points) 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a \mbox{\hyperlink{struct_node}{Node}} pointer which changes every time its called \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a float number which is the diistance between 2 nodes (3d points) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}\label{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}} 
+\index{NNClassifier@{NNClassifier}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NNClassifier\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A function that predicts the orientation label of data from user input values. 
+
+This function predicts the phone\textquotesingle{}s orientation based on the data learned and gives it a label and outputs it to the console 
+\begin{DoxyParams}{Parameters}
+{\em takes} & 3 floats which are input by the user (in the range of -\/1 -\/\texorpdfstring{$>$}{>} 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}{Phone\+Orientation}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00197}{197}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}\label{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}} 
+\index{NNClassifier@{NNClassifier}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void NNClassifier\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A function that predicts the orientation label of data from a given text file. 
+
+This function predicts the phone\textquotesingle{}s orientation based on the data learned and gives it a label and outputs it to a new result file 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}{Phone\+Orientation}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00242}{242}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}\label{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}} 
+\index{NNClassifier@{NNClassifier}!setHead@{setHead}}
+\index{setHead@{setHead}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setHead()}{setHead()}}
+{\footnotesize\ttfamily void NNClassifier\+::set\+Head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{NODE}} $\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+Setter function for the head attribute. 
+
+Sets the head attribute of the current object in use 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a \mbox{\hyperlink{struct_node}{Node}} pointer which is the desired head pointer of the object\textquotesingle{}s head attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}\label{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}} 
+\index{NNClassifier@{NNClassifier}!setLabel@{setLabel}}
+\index{setLabel@{setLabel}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setLabel()}{setLabel()}}
+{\footnotesize\ttfamily void NNClassifier\+::set\+Label (\begin{DoxyParamCaption}\item[{int}]{label }\end{DoxyParamCaption})}
+
+
+
+Setter function for the label attribute. 
+
+Sets the label attribute of the current object in use 
+\begin{DoxyParams}{Parameters}
+{\em takes} & an int which is the desired value of the object\textquotesingle{}s label attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}\label{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}} 
+\index{NNClassifier@{NNClassifier}!setX@{setX}}
+\index{setX@{setX}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void NNClassifier\+::setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Setter function for the x attribute. 
+
+Sets the x attribute of the current object in use 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a float which is the desired value of the object\textquotesingle{}s x attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}\label{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}} 
+\index{NNClassifier@{NNClassifier}!setY@{setY}}
+\index{setY@{setY}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void NNClassifier\+::setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Setter function for the y attribute. 
+
+Sets the y attribute of the current object in use 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a float which is the desired value of the object\textquotesingle{}s y attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}\label{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}} 
+\index{NNClassifier@{NNClassifier}!setZ@{setZ}}
+\index{setZ@{setZ}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setZ()}{setZ()}}
+{\footnotesize\ttfamily void NNClassifier\+::setZ (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Setter function for the z attribute. 
+
+Sets the z attribute of the current object in use 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a float which is the desired value of the object\textquotesingle{}s z attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a0523fd5e1938afd7cc4991124c5bae56}\label{class_n_n_classifier_a0523fd5e1938afd7cc4991124c5bae56}} 
+\index{NNClassifier@{NNClassifier}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ofstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{fout,  }\item[{\mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A friend function that sets current obejct attributes to data read from a file. 
+
+This function reads a text file of data, and then sets each neccessary attribute to that data as a temporary placeholder 
+\begin{DoxyParams}{Parameters}
+{\em takes} & an output file stream object, as well as an \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_file_read_write_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{_file_read_write_8cpp_source}{File\+Read\+Write.\+cpp}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}\label{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}} 
+\index{NNClassifier@{NNClassifier}!setAttributes@{setAttributes}}
+\index{setAttributes@{setAttributes}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setAttributes}{setAttributes}}
+{\footnotesize\ttfamily void set\+Attributes (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A friend function that sets current obejct attributes to data read from a file. 
+
+This function reads a text file of data, and then sets each neccessary attribute to that data as a temporary placeholder 
+\begin{DoxyParams}{Parameters}
+{\em takes} & an input file stream object, as well as an \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} object which will be changed in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_file_read_write_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_file_read_write_8cpp_source}{File\+Read\+Write.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}\label{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}} 
+\index{NNClassifier@{NNClassifier}!head@{head}}
+\index{head@{head}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{NODE}}$\ast$ NNClassifier\+::head\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A member variable that is a pointer to the head of a linked list. 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00035}{35}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}\label{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}} 
+\index{NNClassifier@{NNClassifier}!label@{label}}
+\index{label@{label}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily int NNClassifier\+::label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A member variable that is the label of a phone orientation (temporary int value) that will be compared to learned data. 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00032}{32}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}\label{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}} 
+\index{NNClassifier@{NNClassifier}!x@{x}}
+\index{x@{x}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float NNClassifier\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A member variable that is the x gravity vector for a phone orientation (temporary float value) that will be compared to learned data. 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00023}{23}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}\label{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}} 
+\index{NNClassifier@{NNClassifier}!y@{y}}
+\index{y@{y}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float NNClassifier\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A member variable that is the y gravity vector for a phone orientation (temporary float value) that will be compared to learned data. 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00026}{26}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}\label{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}} 
+\index{NNClassifier@{NNClassifier}!z@{z}}
+\index{z@{z}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float NNClassifier\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A member variable that is the z gravity vector for a phone orientation (temporary float value) that will be compared to learned data. 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00029}{29}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Owen\+A/source/repos/1st Year 2nd SEMESTER/\+PROG71020/\+Lab8-\/9/\+Program/\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.\+h}}\item 
+C\+:/\+Users/\+Owen\+A/source/repos/1st Year 2nd SEMESTER/\+PROG71020/\+Lab8-\/9/\+Program/NNClassifier.\+cpp\end{DoxyCompactItemize}

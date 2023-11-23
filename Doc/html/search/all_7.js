@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['phoneorientation_0',['PhoneOrientation',['../class_phone_orientation.html',1,'']]],
+  ['phoneorientation_2eh_1',['PhoneOrientation.h',['../_phone_orientation_8h.html',1,'']]],
+  ['predictorientation_2',['predictOrientation',['../class_dummy_classifier.html#ae4fe518e6129d86dd13084f5a2028128',1,'DummyClassifier::predictOrientation(float, float, float)'],['../class_dummy_classifier.html#a0688515a22fdeeebd94fcb1adddc9c9c',1,'DummyClassifier::predictOrientation(std::string)'],['../class_k_n_n_classifier.html#a60d3edc766f5b75312ee6bb6c358702f',1,'KNNClassifier::predictOrientation(float, float, float)'],['../class_k_n_n_classifier.html#a10e2855af1f8149ff409c2c045f96de5',1,'KNNClassifier::predictOrientation(std::string)'],['../class_n_n_classifier.html#aa29ce7fc6007a7adf0f53c39bf84fa92',1,'NNClassifier::predictOrientation(float, float, float)'],['../class_n_n_classifier.html#ad1f6319904ddffa0ab297acf3f42add4',1,'NNClassifier::predictOrientation(std::string)'],['../class_phone_orientation.html#a8bbb291d386aef14aaf1ac2f170c844c',1,'PhoneOrientation::predictOrientation(float, float, float)=0'],['../class_phone_orientation.html#ac16c05990787c12d0a099ab201a791c4',1,'PhoneOrientation::predictOrientation(std::string)=0']]]
+];

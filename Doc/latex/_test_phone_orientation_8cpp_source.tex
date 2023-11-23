@@ -1,0 +1,81 @@
+\hypertarget{_test_phone_orientation_8cpp_source}{}\doxysection{Test\+Phone\+Orientation.\+cpp}
+\label{_test_phone_orientation_8cpp_source}\index{C:/Users/OwenA/source/repos/1st Year 2nd SEMESTER/PROG71020/Lab8-\/9/Program/TestPhoneOrientation.cpp@{C:/Users/OwenA/source/repos/1st Year 2nd SEMESTER/PROG71020/Lab8-\/9/Program/TestPhoneOrientation.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Owen\ Covach\ (Team\ Leader)}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00003}00003\ \textcolor{comment}{//\ Group\ Number:\ 10}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00004}00004\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00005}00005\ \textcolor{comment}{//\ PROG71020\ -\/\ Winter\ 2023}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00006}00006\ \textcolor{comment}{//\ Lab\ 08-\/9\ -\/\ April\ 14/2023}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00007}00007\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_test_phone_orientation_8h}{TestPhoneOrientation.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00011}00011\ \textcolor{comment}{//\ this\ function\ tests\ the\ data\ that\ was\ learned\ to\ see\ if\ it\ was\ stored\ properly}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00012}\mbox{\hyperlink{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}{00012}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}{testPhoneOrientation::testOrientation}}(std::string\ fileName,\ \mbox{\hyperlink{struct_node}{NODE}}*\ head)}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ declare\ an\ input\ file\ variable}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00015}00015\ \ \ \ \ std::ifstream\ fin;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//\ open\ the\ given\ file\ as\ a\ read\ file}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00018}00018\ \ \ \ \ fin.open(fileName);}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{if}\ (fin.is\_open())}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00020}00020\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ declaring\ prediction\ variables}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nearestDistance;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nearestLabel\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ keep\ looping\ through\ file\ until\ reach\ the\ end\ of\ it}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!fin.eof())}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calls\ the\ file\ read\ function\ in\ FileReadWrite.cpp}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}{setAttributes}}(fin,\ *\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ checks\ if\ there\ is\ invalid\ values}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{getLabel}}()\ ==\ 7)}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ data\ found..."{}}\ <<\ std::endl\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ create\ a\ temp\ head\ node\ to\ traverse\ through\ and\ not\ edit\ original\ head\ pointer}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_node}{NODE}}*\ temp\ =\ \mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ the\ first\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ through\ the\ trained\ data\ till\ end\ reached}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ all\ the\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp))\ <\ nearestDistance)}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ the\ calculated\ nearest\ distance\ is\ less\ than\ the\ current\ then\ set\ the\ prediction\ variable\ as\ that\ value}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestLabel\ =\ temp-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}};}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ to\ next\ node;}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}};}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ checks\ if\ the\ calculated\ nearest\ label\ matches\ the\ actual\ label}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{getLabel}}()\ ==\ nearestLabel)}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Matched!\ -\/\ testLabel:\ "{}}\ <<\ nearestLabel\ <<\ \textcolor{stringliteral}{"{},\ nearest\ label:\ "{}}\ <<\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{getLabel}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Not\ Matched...\ -\/\ testLabel:\ "{}}\ <<\ nearestLabel\ <<\ \textcolor{stringliteral}{"{},\ nearest\ label:\ "{}}\ <<\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{getLabel}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ close\ file\ to\ avoid\ errors}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ fin.close();}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00071}00071\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ case\ error\ occurs\ with\ opening\ file}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}can't\ open\ file:"{}}\ <<\ fileName\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_test_phone_orientation_8cpp_source_l00075}00075\ \}}
+
+\end{DoxyCode}

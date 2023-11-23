@@ -1,0 +1,121 @@
+\hypertarget{classtest_phone_orientation}{}\doxysection{test\+Phone\+Orientation Class Reference}
+\label{classtest_phone_orientation}\index{testPhoneOrientation@{testPhoneOrientation}}
+
+
+A \mbox{\hyperlink{classtest_phone_orientation}{test\+Phone\+Orientation}} class (derived class) that inherited from the \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} class (Parent Class) that has a public access specififers.  
+
+
+
+
+{\ttfamily \#include \char`\"{}test\+Phone\+Orientation.\+h\char`\"{}}
+
+Inheritance diagram for test\+Phone\+Orientation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtest_phone_orientation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}{test\+Orientation}} (std\+::string, \mbox{\hyperlink{struct_node}{NODE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em void \mbox{\hyperlink{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}{test\+Orientation(std\+::string, NODE$\ast$)}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}{NNClassifier}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}{setX}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the x attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}{setY}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the y attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}{setZ}} (float)
+\begin{DoxyCompactList}\small\item\em Setter function for the z attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}{set\+Label}} (int)
+\begin{DoxyCompactList}\small\item\em Setter function for the label attribute. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}{set\+Head}} (\mbox{\hyperlink{struct_node}{NODE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Setter function for the head attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the x attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the y attribute. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}{getZ}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the z attribute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{get\+Label}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the label attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{NODE}} $\ast$ \mbox{\hyperlink{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Getter function for the head attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}{$\sim$\+NNClassifier}} ()
+\begin{DoxyCompactList}\small\item\em A Destructor for \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} Class used to ensure that we free the head member variable. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearest\+Neighbour}} (\mbox{\hyperlink{struct_node}{NODE}} $\ast$)
+\begin{DoxyCompactList}\small\item\em A function that calculates the distance between 2 nodes (3d points) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{decide\+Orientation\+Name}} (int)
+\begin{DoxyCompactList}\small\item\em A function that decides the name of a given integer label. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}{learn\+Orientation}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A function that learns data from a given text file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{predict\+Orientation}} (float, float, float)
+\begin{DoxyCompactList}\small\item\em A function that predicts the orientation label of data from user input values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}{predict\+Orientation}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A function that predicts the orientation label of data from a given text file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}{learn\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for learn\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}{predict\+Orientation}} (float, float, float)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}{predict\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classtest_phone_orientation}{test\+Phone\+Orientation}} class (derived class) that inherited from the \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} class (Parent Class) that has a public access specififers. 
+
+This class inherits the \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} class functions as well as adds a new test function \begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_test_phone_orientation_8h_source_l00020}{20}} of file \mbox{\hyperlink{_test_phone_orientation_8h_source}{Test\+Phone\+Orientation.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}\label{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}} 
+\index{testPhoneOrientation@{testPhoneOrientation}!testOrientation@{testOrientation}}
+\index{testOrientation@{testOrientation}!testPhoneOrientation@{testPhoneOrientation}}
+\doxysubsubsection{\texorpdfstring{testOrientation()}{testOrientation()}}
+{\footnotesize\ttfamily void test\+Phone\+Orientation\+::test\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name,  }\item[{\mbox{\hyperlink{struct_node}{NODE}} $\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+void \mbox{\hyperlink{classtest_phone_orientation_a9a9e4a1a49da6c965dee4368a4f808e3}{test\+Orientation(std\+::string, NODE$\ast$)}} 
+
+A function that tests the learned data retrieved from the \char`\"{}learn\+Orientation()\char`\"{} function
+
+This function tests all the learned data to make sure the program as learned the right data properply 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file, as well as a node pointer which stores th head of the linked list of learned data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_test_phone_orientation_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_test_phone_orientation_8cpp_source}{Test\+Phone\+Orientation.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Owen\+A/source/repos/1st Year 2nd SEMESTER/\+PROG71020/\+Lab8-\/9/\+Program/\mbox{\hyperlink{_test_phone_orientation_8h}{Test\+Phone\+Orientation.\+h}}\item 
+C\+:/\+Users/\+Owen\+A/source/repos/1st Year 2nd SEMESTER/\+PROG71020/\+Lab8-\/9/\+Program/Test\+Phone\+Orientation.\+cpp\end{DoxyCompactItemize}

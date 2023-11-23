@@ -1,0 +1,133 @@
+\hypertarget{class_phone_orientation}{}\doxysection{Phone\+Orientation Class Reference}
+\label{class_phone_orientation}\index{PhoneOrientation@{PhoneOrientation}}
+
+
+An Abstract Class called \mbox{\hyperlink{class_phone_orientation}{Phone\+Orientation}} since this class contains atleast one pure virtual function (a function that does not have a definition)  
+
+
+
+
+{\ttfamily \#include \char`\"{}Phone\+Orientation.\+h\char`\"{}}
+
+Inheritance diagram for Phone\+Orientation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_phone_orientation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}{learn\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for learn\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}{predict\+Orientation}} (float, float, float)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}{predict\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for predict\+Orientation which does not have a body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Abstract Class called \mbox{\hyperlink{class_phone_orientation}{Phone\+Orientation}} since this class contains atleast one pure virtual function (a function that does not have a definition) 
+
+This class declares the learning and predicting functions that will be inherited by other child classes \begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_phone_orientation_8h_source_l00023}{23}} of file \mbox{\hyperlink{_phone_orientation_8h_source}{Phone\+Orientation.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}\label{class_phone_orientation_a478a0360b0c4d63ffdfc6da00e340aba}} 
+\index{PhoneOrientation@{PhoneOrientation}!learnOrientation@{learnOrientation}}
+\index{learnOrientation@{learnOrientation}!PhoneOrientation@{PhoneOrientation}}
+\doxysubsubsection{\texorpdfstring{learnOrientation()}{learnOrientation()}}
+{\footnotesize\ttfamily virtual void Phone\+Orientation\+::learn\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual member for learn\+Orientation which does not have a body. 
+
+It is used to represent general concepts in this case is learn\+Orientation that will be used as a base class for concrete classes to learn (e.\+g\+: \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}). In addition, pure specifier (= 0) is assigned after the function declaration. 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_a9df772dc2b2093e4767a5bdac8892af6}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a9c528b64e0a61720d97ee870c574d9c3}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}{NNClassifier}}.
+
+\mbox{\Hypertarget{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}\label{class_phone_orientation_a8bbb291d386aef14aaf1ac2f170c844c}} 
+\index{PhoneOrientation@{PhoneOrientation}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!PhoneOrientation@{PhoneOrientation}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Phone\+Orientation\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{float}]{,  }\item[{float}]{,  }\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual member for predict\+Orientation which does not have a body. 
+
+It is used to represent general concepts in this case is predict\+Orientation that will be used as a base class for concrete classes to predict (e.\+g\+: \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}). In addition, pure specifier (= 0) is assigned after the function declaration. 
+\begin{DoxyParams}{Parameters}
+{\em takes} & 3 floats which are input by the user (in the range of -\/1 -\/\texorpdfstring{$>$}{>} 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_ae4fe518e6129d86dd13084f5a2028128}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a60d3edc766f5b75312ee6bb6c358702f}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{NNClassifier}}.
+
+\mbox{\Hypertarget{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}\label{class_phone_orientation_ac16c05990787c12d0a099ab201a791c4}} 
+\index{PhoneOrientation@{PhoneOrientation}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!PhoneOrientation@{PhoneOrientation}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Phone\+Orientation\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A pure virtual member for predict\+Orientation which does not have a body. 
+
+It is used to represent general concepts in this case is predict\+Orientation that will be used as a base class for concrete classes to predict (e.\+g\+: \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}). In addition, pure specifier (= 0) is assigned after the function declaration. 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string which is the name of a text file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Owen Covach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/4/2023 
+\end{DoxyDate}
+
+
+Implemented in \mbox{\hyperlink{class_dummy_classifier_a0688515a22fdeeebd94fcb1adddc9c9c}{Dummy\+Classifier}}, \mbox{\hyperlink{class_k_n_n_classifier_a10e2855af1f8149ff409c2c045f96de5}{KNNClassifier}}, and \mbox{\hyperlink{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}{NNClassifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Owen\+A/source/repos/1st Year 2nd SEMESTER/\+PROG71020/\+Lab8-\/9/\+Program/\mbox{\hyperlink{_phone_orientation_8h}{Phone\+Orientation.\+h}}\end{DoxyCompactItemize}

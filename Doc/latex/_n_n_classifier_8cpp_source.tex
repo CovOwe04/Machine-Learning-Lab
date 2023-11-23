@@ -1,0 +1,320 @@
+\hypertarget{_n_n_classifier_8cpp_source}{}\doxysection{NNClassifier.\+cpp}
+\label{_n_n_classifier_8cpp_source}\index{C:/Users/OwenA/source/repos/1st Year 2nd SEMESTER/PROG71020/Lab8-\/9/Program/NNClassifier.cpp@{C:/Users/OwenA/source/repos/1st Year 2nd SEMESTER/PROG71020/Lab8-\/9/Program/NNClassifier.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Owen\ Covach\ (Team\ Leader)}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00003}00003\ \textcolor{comment}{//\ Group\ Number:\ 10}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00004}00004\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00005}00005\ \textcolor{comment}{//\ PROG71020\ -\/\ Winter\ 2023}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00006}00006\ \textcolor{comment}{//\ Lab\ 08-\/9\ -\/\ April\ 14/2023}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00007}00007\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00011}00011\ \textcolor{comment}{//\ default\ constructor}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00012}\mbox{\hyperlink{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}{00012}}\ \mbox{\hyperlink{class_n_n_classifier_aabbf0c05f49549bffadd139979c48203}{NNClassifier::NNClassifier}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00014}00014\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}{x}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00015}00015\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}{y}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00016}00016\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}{z}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00017}00017\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00018}00018\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_node}{NODE}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00019}00019\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}-\/>\mbox{\hyperlink{struct_node_a3a6b88b82c51d21305656d01e3c53039}{x}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00020}00020\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}-\/>\mbox{\hyperlink{struct_node_a0658e9aa67d95daa5da3cca23b13f6de}{y}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00021}00021\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}-\/>\mbox{\hyperlink{struct_node_ab0676d1ca50996c875aad2e6773d758c}{z}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00022}00022\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00023}00023\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}}-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00026}00026\ \textcolor{comment}{//****************************************}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00027}00027\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ Setters}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00028}\mbox{\hyperlink{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}{NNClassifier::setX}}(\textcolor{keywordtype}{float}\ x)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00030}00030\ \ \ \ \ this-\/>x\ =\ \mbox{\hyperlink{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}{x}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00031}00031\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00033}\mbox{\hyperlink{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}{00033}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}{NNClassifier::setY}}(\textcolor{keywordtype}{float}\ y)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00034}00034\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00035}00035\ \ \ \ \ this-\/>y\ =\ \mbox{\hyperlink{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}{y}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00038}\mbox{\hyperlink{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}{00038}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}{NNClassifier::setZ}}(\textcolor{keywordtype}{float}\ z)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00040}00040\ \ \ \ \ this-\/>z\ =\ \mbox{\hyperlink{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}{z}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00043}\mbox{\hyperlink{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}{00043}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_a1e7d3fa1e1703f43321ccf2f254074a8}{NNClassifier::setLabel}}(\textcolor{keywordtype}{int}\ label)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00045}00045\ \ \ \ \ this-\/>label\ =\ \mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00048}\mbox{\hyperlink{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}{00048}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_a1dea8a8109ed9f125ba31f470cf2d510}{NNClassifier::setHead}}(\mbox{\hyperlink{struct_node}{NODE}}*\ head)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00049}00049\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00050}00050\ \ \ \ \ this-\/>head\ =\ \mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00052}00052\ \textcolor{comment}{//****************************************}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00055}00055\ \textcolor{comment}{//****************************************}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00056}00056\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ Getters}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00057}\mbox{\hyperlink{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}{00057}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}{NNClassifier::getX}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00058}00058\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}{x}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00062}\mbox{\hyperlink{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}{00062}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}{NNClassifier::getY}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00063}00063\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}{y}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00067}\mbox{\hyperlink{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}{00067}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}{NNClassifier::getZ}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00068}00068\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}{z}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00072}\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{00072}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{NNClassifier::getLabel}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00073}00073\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00077}\mbox{\hyperlink{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}{00077}}\ \mbox{\hyperlink{struct_node}{NODE}}*\ \mbox{\hyperlink{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}{NNClassifier::getHead}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00078}00078\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00080}00080\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00081}00081\ \textcolor{comment}{//****************************************}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00084}00084\ \textcolor{comment}{//\ destructor}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00085}\mbox{\hyperlink{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}{00085}}\ \mbox{\hyperlink{class_n_n_classifier_a9d50b61ec4062a4307daeb6701a2dc73}{NNClassifier::\string~NNClassifier}}()}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00086}00086\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keyword}{delete}\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00088}00088\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00090}00090\ \textcolor{comment}{//\ calculates\ the\ distance\ between\ the\ 2\ given\ nodes\ (3d\ points)}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00091}\mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{00091}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{NNClassifier::nearestNeighbour}}(\mbox{\hyperlink{struct_node}{NODE}}*\ n)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00092}00092\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00093}00093\ \ \ \ \ \textcolor{comment}{//\ distance\ equation,\ typecasting\ to\ float\ to\ avoid\ data\ loss}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{float})sqrt(pow((this-\/>\mbox{\hyperlink{class_n_n_classifier_a6adef68704f6ff39dfde5bc8e3544126}{x}}\ -\/\ n-\/>\mbox{\hyperlink{struct_node_a3a6b88b82c51d21305656d01e3c53039}{x}}),\ 2)\ +\ pow((this-\/>\mbox{\hyperlink{class_n_n_classifier_ae3ad3edb64355c982688637057f378a1}{y}}\ -\/\ n-\/>\mbox{\hyperlink{struct_node_a0658e9aa67d95daa5da3cca23b13f6de}{y}}),\ 2)\ +\ pow((this-\/>\mbox{\hyperlink{class_n_n_classifier_a592b1bd148c0cd71fd3b7372ae17098b}{z}}\ -\/\ n-\/>\mbox{\hyperlink{struct_node_ab0676d1ca50996c875aad2e6773d758c}{z}}),\ 2));}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00095}00095\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00097}00097\ \textcolor{comment}{//\ based\ on\ the\ integer\ label,\ it\ has\ a\ name\ with\ it,\ this\ function\ decides\ that}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00098}\mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{00098}}\ std::string\ \mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{NNClassifier::decideOrientationName}}(\textcolor{keywordtype}{int}\ nearestLabel)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00099}00099\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{comment}{//\ gets\ the\ calculated\ nearest\ label\ and\ returns\ a\ word\ label\ for\ the\ user\ to\ see}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{switch}\ (nearestLabel)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00102}00102\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Face\ Up"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Face\ Down"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00112}00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Portrait"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00113}00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00115}00115\ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Portrait\ Upside\ Down"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00119}00119\ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Landscape\ Left"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{keywordflow}{case}\ 6:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Landscape\ right"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00126}00126\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Unknown\ Orientation"{}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00129}00129\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00130}00130\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00132}00132\ \textcolor{comment}{//\ this\ function\ learns\ data\ based\ on\ a\ file\ given}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00133}\mbox{\hyperlink{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}{00133}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_aeededda458784a74c5939e0d905c544a}{NNClassifier::learnOrientation}}(std::string\ fileName)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00134}00134\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{comment}{//\ declare\ an\ input\ file\ variable}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00136}00136\ \ \ \ \ std::ifstream\ fin;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00138}00138\ \ \ \ \ \textcolor{comment}{//\ open\ the\ given\ file\ as\ a\ read\ file}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00139}00139\ \ \ \ \ fin.open(fileName);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00140}00140\ \ \ \ \ \textcolor{keywordflow}{if}\ (fin.is\_open())}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00141}00141\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ keep\ looping\ through\ file\ until\ reach\ the\ end\ of\ it}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!fin.eof())}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calls\ the\ file\ read\ function\ in\ FileReadWrite.cpp}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}{setAttributes}}(fin,\ *\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ checks\ if\ there\ is\ invalid\ values}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}}\ ==\ 7)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ data\ found..."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ create\ a\ temp\ head\ node\ to\ traverse\ through\ and\ not\ edit\ original\ head\ pointer}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_node}{NODE}}*\ temp\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_ab4cf217cc23bf1c7cccef3a38ef77569}{getHead}}();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ checks\ if\ there\ was\ an\ error\ creating\ the\ temp\ node}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ through\ the\ node\ until\ reached\ tail}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ set\ the\ node\ to\ the\ current\ data\ retrieved}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_a3a6b88b82c51d21305656d01e3c53039}{x}}\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a1163e22fac7a3e42bb2cdae9c48b61ba}{getX}}();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00170}00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_a0658e9aa67d95daa5da3cca23b13f6de}{y}}\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a00d7f1d23d4bf52027d88cf4be7015c8}{getY}}();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_ab0676d1ca50996c875aad2e6773d758c}{z}}\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_aeeb55a49631a4057f72b66e0885566b6}{getZ}}();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}}\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a9b04bc94c143e6b5f7d18d3955d92922}{getLabel}}();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00174}00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ initializing\ an\ empty\ node\ for\ the\ next\ loop\ through}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00175}00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_node}{NODE}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00176}00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}-\/>\mbox{\hyperlink{struct_node_a3a6b88b82c51d21305656d01e3c53039}{x}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}-\/>\mbox{\hyperlink{struct_node_a0658e9aa67d95daa5da3cca23b13f6de}{y}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}-\/>\mbox{\hyperlink{struct_node_ab0676d1ca50996c875aad2e6773d758c}{z}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00185}00185\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ close\ file\ to\ avoid\ errors}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00187}00187\ \ \ \ \ \ \ \ \ fin.close();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00188}00188\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00189}00189\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00190}00190\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00191}00191\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ case\ error\ occurs\ with\ opening\ file}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00192}00192\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}can't\ open\ file:"{}}\ <<\ fileName\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00193}00193\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00194}00194\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00195}00195\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00196}00196\ \textcolor{comment}{//\ this\ function\ predicts\ a\ single\ point\ given\ by\ the\ user}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00197}\mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{00197}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{NNClassifier::predictOrientation}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ z)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00198}00198\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00199}00199\ \ \ \ \ \textcolor{comment}{//\ checks\ if\ the\ input\ data\ is\ invalid\ or\ not\ immediately\ since\ its\ one\ value\ only}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00200}00200\ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ <\ -\/1\ ||\ x\ >\ 1\ ||}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00201}00201\ \ \ \ \ \ \ \ \ y\ <\ -\/1\ ||\ y\ >\ 1\ ||}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00202}00202\ \ \ \ \ \ \ \ \ z\ <\ -\/1\ ||\ z\ >\ 1)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00203}00203\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00204}00204\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl\ <<\ std::endl\ <<\textcolor{stringliteral}{"{}Data\ entered\ is\ invalid..."{}}\ <<\ std::endl\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00205}00205\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00206}00206\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00208}00208\ \ \ \ \ \textcolor{comment}{//\ declaring\ prediction\ variables}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00209}00209\ \ \ \ \ \textcolor{keywordtype}{float}\ nearestDistance;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00210}00210\ \ \ \ \ \textcolor{keywordtype}{int}\ nearestLabel\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00212}00212\ \ \ \ \ \textcolor{comment}{//\ sets\ each\ attribute}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00213}00213\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a238ae24c82f80a63023c6868d46cb266}{setX}}(x);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00214}00214\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_a715f8c3b5e8f3b21e943d6885a9d8ee7}{setY}}(y);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00215}00215\ \ \ \ \ this-\/>\mbox{\hyperlink{class_n_n_classifier_ad7f6e62f100c651e9aa13d662a3ea72c}{setZ}}(z);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00216}00216\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00217}00217\ \ \ \ \ \textcolor{comment}{//\ create\ a\ temp\ head\ node\ to\ traverse\ through\ and\ not\ edit\ original\ head\ pointer}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00218}00218\ \ \ \ \ \mbox{\hyperlink{struct_node}{NODE}}*\ temp\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00220}00220\ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ the\ first\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00221}00221\ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00223}00223\ \ \ \ \ \textcolor{comment}{//\ traverse\ through\ the\ trained\ data\ till\ end\ reached}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00224}00224\ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00225}00225\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00226}00226\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ all\ the\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00227}00227\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp))\ <\ nearestDistance)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00228}00228\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00229}00229\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ the\ calculated\ nearest\ distance\ is\ less\ than\ the\ current\ then\ set\ the\ prediction\ variable\ as\ that\ value}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00230}00230\ \ \ \ \ \ \ \ \ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00231}00231\ \ \ \ \ \ \ \ \ \ \ \ \ nearestLabel\ =\ temp-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00232}00232\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00233}00233\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ to\ next\ node;}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00234}00234\ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00235}00235\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00237}00237\ \ \ \ \ \textcolor{comment}{//\ print\ out\ the\ predicted\ labels\ out\ to\ the\ console\ for\ the\ user\ to\ see}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00238}00238\ \ \ \ \ std::cout\ <<\ std::endl\ <<\ std::endl\ <<\ \textcolor{stringliteral}{"{}Predicted\ label:"{}}\ <<\ nearestLabel\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ \mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{decideOrientationName}}(nearestLabel)\ <<\ std::endl\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00239}00239\ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00240}00240\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00241}00241\ \textcolor{comment}{//\ this\ function\ predicts\ multiple\ points\ given\ by\ a\ text\ file\ from\ the\ user}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00242}\mbox{\hyperlink{class_n_n_classifier_ad1f6319904ddffa0ab297acf3f42add4}{00242}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_n_classifier_aa29ce7fc6007a7adf0f53c39bf84fa92}{NNClassifier::predictOrientation}}(std::string\ fileName)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00243}00243\ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00244}00244\ \ \ \ \ \textcolor{comment}{//\ declare\ an\ input\ file\ variable}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00245}00245\ \ \ \ \ std::ifstream\ fin;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{comment}{//\ open\ the\ given\ file\ as\ a\ read\ file}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00248}00248\ \ \ \ \ fin.open(fileName);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00249}00249\ \ \ \ \ \textcolor{keywordflow}{if}\ (fin.is\_open())}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00250}00250\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00251}00251\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ declare\ an\ output\ file\ variable}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00252}00252\ \ \ \ \ \ \ \ \ std::ofstream\ fout;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00253}00253\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00254}00254\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ open\ a\ new\ file\ as\ a\ write\ file}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00255}00255\ \ \ \ \ \ \ \ \ fout.open(\textcolor{stringliteral}{"{}Result.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00256}00256\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fout.is\_open())}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00257}00257\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ declaring\ prediction\ variables}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nearestDistance;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00260}00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nearestLabel\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00261}00261\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ keep\ looping\ through\ file\ until\ reach\ the\ end\ of\ it}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00263}00263\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!fin.eof())}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calls\ the\ file\ read\ function\ in\ FileReadWrite.cpp}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_n_n_classifier_a0f7a8a07a1d29308f5d68cbd203ce5dd}{setAttributes}}(fin,\ *\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00267}00267\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ checks\ if\ there\ is\ invalid\ values}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\mbox{\hyperlink{class_n_n_classifier_af2176fa6bd429100b6205341f0c0b090}{label}}\ \ \ \ ==\ 7)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ data\ found..."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00272}00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00274}00274\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ create\ a\ temp\ head\ node\ to\ traverse\ through\ and\ not\ edit\ original\ head\ pointer}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00276}00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_node}{NODE}}*\ temp\ =\ this-\/>\mbox{\hyperlink{class_n_n_classifier_a7391e17e0c09bafcfa07037387796eb6}{head}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00277}00277\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00278}00278\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ the\ first\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00279}00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00280}00280\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00281}00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ through\ the\ trained\ data\ till\ end\ reached}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00282}00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (temp\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00283}00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00284}00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ calculate\ the\ distance\ between\ the\ current\ data\ to\ all\ the\ trained\ data}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp))\ <\ nearestDistance)}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00286}00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ the\ calculated\ nearest\ distance\ is\ less\ than\ the\ current\ then\ set\ the\ prediction\ variable\ as\ that\ value}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestDistance\ =\ \mbox{\hyperlink{class_n_n_classifier_ae2198a89ae81d03dc48123e31f1e1fe9}{nearestNeighbour}}(temp);}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00289}00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearestLabel\ =\ temp-\/>\mbox{\hyperlink{struct_node_ab2c4f74231b19640104ac28fd17dae18}{label}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00290}00290\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00291}00291\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00292}00292\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ traverse\ to\ next\ node;}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ temp-\/>\mbox{\hyperlink{struct_node_af67b110ca1a258b793bf69d306929b22}{next}};}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00295}00295\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00296}00296\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ print\ out\ the\ object\ data\ (operator<<\ operator\ overload\ in\ FileReadWrite.cpp)\ and\ the\ predicted\ labels}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00297}00297\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fout\ <<\ *\textcolor{keyword}{this}\ <<\ nearestLabel\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_n_n_classifier_a9e4082c8888d47c75fe576be3edc9972}{decideOrientationName}}(nearestLabel)\ <<\ std::endl\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00298}00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00299}00299\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00300}00300\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00301}00301\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ close\ file\ to\ avoid\ errors}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ fout.close();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00304}00304\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00305}00305\ }
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00306}00306\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ close\ file\ to\ avoid\ errors}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00307}00307\ \ \ \ \ \ \ \ \ fin.close();}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00308}00308\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00309}00309\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00310}00310\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00311}00311\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ case\ error\ occurs\ with\ opening\ file}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00312}00312\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}can't\ open\ file:"{}}\ <<\ fileName\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00313}00313\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_n_n_classifier_8cpp_source_l00314}00314\ \}}
+
+\end{DoxyCode}
